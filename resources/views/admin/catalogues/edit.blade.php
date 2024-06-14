@@ -42,7 +42,8 @@
                                     <div class="mt-3">
                                         <label for="cover" class="form-label">Img Cover</label>
                                         <input type="file" class="form-control" name="cover" id="cover">
-                                        <img src="{{ \Storage::url($model->cover) }}" alt="" width="100px">
+                                        <!-- <img src="{{ \Storage::url($model->cover) }}" alt="" width="100px"> -->
+                                        <img src="{{ asset('storage/' . $model->cover) }}" width="50px" alt="Image">
                                     </div>
                                     <div class="form-check form-switch form-switch-primary mt-3">
                                         <input class="form-check-input" type="checkbox" role="switch"

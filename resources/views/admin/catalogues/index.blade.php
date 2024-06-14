@@ -51,7 +51,7 @@ Danh sách Danh mục sản phẩm
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>
-                                <img src="{{ \Storage::url($item->cover) }}" width="50px">
+                            <img src="{{ asset('storage/' . $item->cover) }}" width="50px" alt="Image">
                             </td>
                             <td>{!! $item->is_active
                                 ? '<span class="badge bg-primary">YES</span>'

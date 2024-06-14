@@ -60,14 +60,14 @@ Danh sách sản phẩm
                         <tr>
                             <td>{{ $item ->id }}</td>
                             <td>
-                                @php
-                                    $url = $item->img_thumbnail;
-                                    if(! \Str::contains($url, 'http')){
-                                        $url = Storage::url($url);
-                                    }
-                                @endphp
-                                <img src="{{ $url }}" alt="" width="100px">
-                            </td>
+    @php
+        $url = $item->img_thumbnail;
+        if (!\Illuminate\Support\Str::contains($url, 'http')) {
+            $url = Storage::url($url);
+        }
+    @endphp
+    <img src="{{ $url }}" alt="" width="100px">
+</td>
                             <td>{{ $item->name}} </td>
                             <td>{{ $item->sku}} </td>
                             <td>{{ $item->catelogue->name}} </td>

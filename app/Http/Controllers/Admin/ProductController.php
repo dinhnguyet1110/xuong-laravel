@@ -68,7 +68,7 @@ class ProductController extends Controller
             $dataProductVariants[] = [
                 'product_size_id' => $tmp[0],
                 'product_color_id' => $tmp[1],
-                'quantity' => $item['quantity'],
+                'quatity' => $item['quatity'],
                 'image' => $item['$image'] ?? null,
             ];
         }

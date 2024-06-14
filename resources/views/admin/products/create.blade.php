@@ -157,7 +157,7 @@ Thêm mới sản phẩm
                                             </td>
                                             <td>
                                                 <input type="text" class="form-controll" 
-                                                name="product_variants[{{ $sizeID . '-' .$colorID }}][quantity]" value="100">
+                                                name="product_variants[{{ $sizeID . '-' .$colorID }}][quatity]" value="1">
                                             </td>
                                             <td>
                                                 <input type="file" class="form_control"
